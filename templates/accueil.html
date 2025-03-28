@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block title %}
+    Accueil
+{% endblock  %}
+
+
+{% block body %}
+<div class="body">
+    <div class="content">
+        <h1>TACTINFO</h1>
+        <h4>Toute Activité Technique de l'Informatique</h4>
+        <img src="{% static 'images/download~2.jpg' %} " alt="" style="width: 100px; height: 100px;">
+        <p class="mt-5 offset">Un établissement d'excellence dédié à la formation en informatique,où innovation,technologie et savoir se rencontrent pour façonner les experts de demain.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Inscription</a>
+            <a href="#" class="btn btn-secondary">En savoir plus</a>
+        </div>
+        
+        <div class="accreditation">
+          <strong>Agrément</strong> MENRES N° 1300/2002/METFP du 05/02/2002
+        </div>
+    </div>
+    <div class="point" style="text-align: center;">
+        <div class="spinner-grow text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>   
+</div>
+
+<!--div class="body2">
+    <h1 class="mt-5">Formation</h1>
+    <h4 style="text-align: center;">Formation initiale BACC +3</h4>
+
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <h5>Maintenance et administration système</h5>
+            <img src="copy-space-laptop-virtual-reality-headset.jpg" class="card-img-top" alt="...">
+            <div class="card-body"></div>    
+            
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <h5>Developpeur d'application</h5>
+            <img src="istockphoto-1429524033-1024x1024.jpg" class="card-img-top" alt="...">
+            <div class="card-body"></div>    
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <h5>Administration reseaux</h5>
+            <img src="istockphoto-1500322075-612x612.jpg" class="card-img-top" alt="...">
+            <div class="card-body"></div>    
+            
+        </div>
+
+    </div>
+
+    <h4 style="text-align: center;">Formation Modulaire</h4>
+
+    <div class="container1">
+        <div class="card" style="width: 18rem;">
+            <h5>Maintenance d'ordinateur</h5>
+            <img src="istockphoto-1429524033-1024x1024.jpg" class="card-img-top" alt="...">
+            <div class="card-body">    
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <h5>PAO</h5>
+            <img src="istockphoto-1500322075-612x612.jpg" class="card-img-top" alt="...">
+            <div class="card-body">    
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <h5>Gestion de Bases de données</h5>
+            <img src="istockphoto-1500322075-612x612.jpg" class="card-img-top" alt="...">
+            <div class="card-body">    
+            </div>
+        </div>
+
+    </div>
+
+    <button class="btn btn-primary center" style="text-align: center;">En savoir plus </button>
+</div-->
+<!-- Formations Section -->
+<section class="formations-section">
+    <div class="section-header">
+        <h2 class="animate__animated animate__fadeIn">Formation</h2>
+        <h4 class="animate__animated animate__fadeIn animate__delay-1s">Formation initiale BACC +3</h4>
+    </div>
+
+    <div class="formations-grid">
+        <!-- Card 1 -->
+        <div class="formation-card animate__animated animate__fadeInUp">
+            <div class="card-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <h3>Maintenance et administration système</h3>
+            <div class="card-image">
+                <img src="copy-space-laptop-virtual-reality-headset.jpg" alt="Maintenance système">
+            </div>
+            <div class="card-overlay">
+                <p>Formation complète en maintenance hardware et software, administration de systèmes...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Développeur d'application</h3>
+            <div class="card-image">
+                <img src="istockphoto-1429524033-1024x1024.jpg" alt="Développement d'application">
+            </div>
+            <div class="card-overlay">
+                <p>Maîtrise des langages de programmation modernes et méthodologies de développement...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-icon">
+                <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Administration réseaux</h3>
+            <div class="card-image">
+                <img src="istockphoto-1500322075-612x612.jpg" alt="Administration réseaux">
+            </div>
+            <div class="card-overlay">
+                <p>Configuration, gestion et sécurisation des infrastructures réseaux d'entreprise...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header mt-5">
+        <h4 class="animate__animated animate__fadeIn">Formation Modulaire</h4>
+    </div>
+
+    <div class="formations-grid modular">
+        <!-- Modular Card 1 -->
+        <div class="formation-card animate__animated animate__fadeInUp">
+            <div class="card-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h3>Maintenance d'ordinateur</h3>
+            <div class="card-image">
+                <img src="istockphoto-1429524033-1024x1024.jpg" alt="Maintenance ordinateur">
+            </div>
+            <div class="card-overlay">
+                <p>Apprenez à diagnostiquer et réparer les pannes matérielles et logicielles...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Modular Card 2 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>PAO</h3>
+            <div class="card-image">
+                <img src="istockphoto-1500322075-612x612.jpg" alt="PAO">
+            </div>
+            <div class="card-overlay">
+                <p>Maîtrise des outils de Publication Assistée par Ordinateur...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Modular Card 3 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <h3>Gestion de Bases de données</h3>
+            <div class="card-image">
+                <img src="{% static 'images/istockphoto-1429524033-1024x1024.jpg' %}" alt="Bases de données">
+            </div>
+            <div class="card-overlay">
+                <p>Conception, implémentation et gestion de bases de données relationnelles...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5 animate__animated animate__fadeIn">
+        <a href="#" class="btn btn-primary btn-lg">En savoir plus</a>
+    </div>
+</section>
+
+<div class="body3">  
+    <h1>A propos de nous</h1>
+    <section class="testimonial-carousel">
+      <div class="container">
+          <h2 class="text-center mb-5"></h2>
+          
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <!-- Premier témoignage -->
+                  <div class="carousel-item active">
+                      <div class="testimonial-item">
+                          <p class="testimonial-text">Fort de 24 ans d'expérience,nous accompagnons celles et ceux qui construisent le monde numérique de 
+                            demain en les formant aux métiers de l'informatique.Notre équipe est composée d'experts,de professionnels
+                            et de passionnés par la volonté de transmettre leur savoir et d'innover dans le domaine des technologies.</p>
+                          <div class="testimonial-info">
+                            <i class="fas fa-graduation-cap"></i>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Deuxième témoignage  -->
+                  <div class="carousel-item">
+                      <div class="testimonial-item">
+                          <p class="testimonial-text">Au fil des années, notre formation a su gagner la confiance de centaines d'étudiants et de 
+                            plusieurs entreprises.Reconnue par l'Etat, elle répond aux éxigences du secteur en offrant des
+                            compétences adaptées aux réalités du marché.Cette dynamique nous permet de créer une communauté engagée,où
+                            apprentissage et innovation vont de pair.</p>
+                          <div class="testimonial-info">
+                            <i class="fas fa-user-graduate"></i>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Troisième témoignage (exemple) -->
+                  <div class="carousel-item">
+                      <div class="testimonial-item">
+                          <p class="testimonial-text">Nous accompagnons les jeunes étudiants vers des secteurs d'avenir comme l'intelligence artificielle,
+                            la cybersécurité et la programmation. En développant leurs compétences, nous favorisons leur insertion
+                            professionnelle tout en contribuant au progrès technologique de l'ile.
+                          </p>
+                          <div class="testimonial-info">
+                            <i class="fas fa-medal"></i>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Contrôles du carousel -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Précédent</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Suivant</span>
+              </button>
+          </div>
+      </div>
+  </section>
+</div>
+
+{% endblock  %}
+    
+    
+
+    

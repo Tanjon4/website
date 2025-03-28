@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block body %}
+<section class="formations-section">
+    <div class="section-header">
+        <h2 class="animate__animated animate__fadeIn">Formation</h2>
+        <h4 class="animate__animated animate__fadeIn animate__delay-1s">Formation initiale BACC +3</h4>
+    </div>
+
+    <div class="formations-grid">
+        <!-- Card 1 -->
+        <div class="formation-card animate__animated animate__fadeInUp">
+            <div class="card-icon">
+                <i class="fas fa-server"></i>
+            </div>
+            <h3>Maintenance et administration système</h3>
+            <div class="card-image">
+                <img src="{% static 'images/pexels-pok-rie-33563-1432673.jpg' %}" alt="Maintenance système">
+            </div>
+            <div class="card-overlay">
+                <p>Formation complète en maintenance hardware et software, administration de systèmes...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Développeur d'application</h3>
+            <div class="card-image">
+                <img src="{% static 'images/pexels-markusspiske-6212801.jpg' %}" alt="Développement d'application">
+            </div>
+            <div class="card-overlay">
+                <p>Maîtrise des langages de programmation modernes et méthodologies de développement...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-icon">
+                <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Administration réseaux</h3>
+            <div class="card-image">
+                <img src="istockphoto-1500322075-612x612.jpg" alt="Administration réseaux">
+            </div>
+            <div class="card-overlay">
+                <p>Configuration, gestion et sécurisation des infrastructures réseaux d'entreprise...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header mt-5">
+        <h4 class="animate__animated animate__fadeIn">Formation Modulaire</h4>
+    </div>
+
+    <div class="formations-grid modular">
+        <!-- Modular Card 1 -->
+        <div class="formation-card animate__animated animate__fadeInUp">
+            <div class="card-icon">
+                <i class="fas fa-tools"></i>
+            </div>
+            <h3>Maintenance d'ordinateur</h3>
+            <div class="card-image">
+                <img src="istockphoto-1429524033-1024x1024.jpg" alt="Maintenance ordinateur">
+            </div>
+            <div class="card-overlay">
+                <p>Apprenez à diagnostiquer et réparer les pannes matérielles et logicielles...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Modular Card 2 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-icon">
+                <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>PAO</h3>
+            <div class="card-image">
+                <img src="istockphoto-1500322075-612x612.jpg" alt="PAO">
+            </div>
+            <div class="card-overlay">
+                <p>Maîtrise des outils de Publication Assistée par Ordinateur...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+
+        <!-- Modular Card 3 -->
+        <div class="formation-card animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-icon">
+                <i class="fas fa-database"></i>
+            </div>
+            <h3>Gestion de Bases de données</h3>
+            <div class="card-image">
+                <img src="istockphoto-1500322075-612x612.jpg" alt="Bases de données">
+            </div>
+            <div class="card-overlay">
+                <p>Conception, implémentation et gestion de bases de données relationnelles...</p>
+                <a href="#" class="btn btn-outline">Détails</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock  %}
+    

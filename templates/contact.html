@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+    <form action="" method="post" class="col-4 lg-4 offset-4 shadow p-4 mt-5">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" name="nom" class="form-control" id="nom" required>
+        </div>
+        <div class="mb-3">
+            <label for="objet" class="form-label">Objet</label>
+            <input type="text" name="objet" class="form-control" id="objet" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control"  name ="message" id="message" rows="3"></textarea>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit">Envoyer</button>
+        </div>
+    </form>
+{% endblock  %}
+    

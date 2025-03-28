@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block body %}
+    <div class="about">
+        <i class="fas fa-star"></i>
+        <h3>A propos de nous</h3>
+        <p>Notre école d'informatique repose sur un apprentissage pratique et imensif.
+            A travers des projets concrets et des mises en situation réelles, nous formons
+            des professionnels prêts à relever les défis du numérique.
+        </p>
+        <img style="width: 300px; height: 300px;" src="{% static 'images/istockphoto-1500322075-612x612.jpg' %}" alt="">
+        
+        <div>
+            <i class="fas fa-star"></i>
+            <h3>Qui sommes-nous?</h3>
+            <p>Tactinfo est un institut d'informatique bénéficiant de 24 ans d'expérience,
+                proposant une formation continue de niveau BACC+2(DTS) et BACC+3(Licence),
+                reconnue par l'Etat. Les étudiants ont la possibilité de se spécialiser en Developpement d'application,
+                Maintenance et Administration des Systèmes ou Administration des Réseaux Locaux d'Entreprise.
+            </p>
+            <img style="width: 300px; height: 300px;" src="{% static 'images/istockphoto-1429524033-1024x1024.jpg' %}" alt="">
+        </div>
+        
+
+{% endblock  %}
+    
